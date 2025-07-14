@@ -1,0 +1,276 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #2c3e1f;
+  color: #f9f9f9;
+  padding: 1rem;
+}
+
+main, section, header, footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+
+.imagen-promocion {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 2rem auto;
+  border-radius: 12px;
+}
+
+header {
+  background-color: #6a742f;
+  color: #f9f9f9;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+
+.logo-container img {
+  max-height: 60px;
+  width: auto;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #f4e285;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f4e285;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+}
+
+nav a:hover {
+  background-color: #e5b80b;
+  color: #2c3e1f;
+}
+
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #6a742f;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  #menu-toggle:checked + .menu-icon + .menu {
+    display: flex;
+  }
+}
+
+/* Carrusel de productos */
+.productos {
+  background-color: #a3b18a;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 1rem;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 1rem;
+}
+
+.producto {
+  flex: 0 0 auto;
+  width: 300px;
+  background-color: #f9f9f9;
+  color: #2c3e1f;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  scroll-behavior: smooth;
+}
+
+.producto h3 {
+  color: #2c3e1f;
+}
+
+.producto h4 {
+  color: #e5b80b;
+}
+
+.producto img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+/* Leer más / descripción */
+.descripcion-corta {
+  max-height: 120px;
+  overflow: hidden;
+  position: relative;
+  transition: max-height 0.3s ease;
+}
+
+.descripcion-corta.expandido {
+  max-height: 1000px;
+}
+
+.leer-mas {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.leer-mas:hover {
+  text-decoration: underline;
+}
+
+.oculto {
+  display: none;
+}
+
+
+form {
+  max-width: 600px;
+  margin: 2rem auto;
+  background-color: #f9f9f9;
+  color: #2c3e1f;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+form input,
+form textarea,
+form select,
+form button {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button {
+  background-color: #6a742f;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #556129;
+}
+
+
+#nosotros div {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+}
+
+#nosotros img {
+  filter: brightness(0) invert(1);
+}
+
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #6a742f;
+  color: #f9f9f9;
+}
+
+footer img {
+  filter: none;
+  margin: 0 0.5rem;
+}
+
+
+.map-responsive {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.agregar-carrito {
+    margin: auto;
+    color: #799a62;
+    background-color: #1d3010;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.agregar-carrito:hover {
+    background-color: #2b4a1c;
+    transform: scale(1.05);
+}
+.producto figure {
+  background-color: #dce9c4; /* Verde claro suave para diferenciar la vista */
+  padding: 0.5rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.producto img {
+  max-width: 100%;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+.producto figcaption {
+  font-size: 0.9rem;
+  color: #2c3e1f;
+  margin-top: 0.25rem;
+}

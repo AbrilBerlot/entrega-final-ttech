@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Pesca2</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="./index.html">
+                <img src="./imagenes/pesca2-logo-removebg-preview.png" alt="Logo de Pesca2" width="200">
+            </a>
+            <h1 style="display: none;">Pesca2</h1>
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <nav class="menu">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="carrito.html">Carrito 🛒 (<span id="contador-carrito">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <figure>
+                <img class="imagen-promocion" src="./imagenes/3 y 6 cuotas sin interés.png" alt="Promo cuotas">
+                <figcaption>¡Descubre nuestros productos importados para mejorar tu pesca!</figcaption>
+            </figure>
+        </section>
+
+        <section id="productos" aria-label="Lista de productos de pesca">
+            <h2 style="text-align: center; margin: 2rem 0;">Nuestros Reels</h2>
+
+            <div class="carrusel-controles">
+                <button onclick="moverCarrusel(-1)">&#8678;</button>
+                <button onclick="moverCarrusel(1)">&#8680;</button>
+            </div>
+
+            <div class="productos">
+
+           <article class="producto" data-id="brutus3000" data-nombre="Reel KastKing Brutus 3000" data-precio="81500">
+                <h3>Reel KastKing Brutus 3000</h3>
+                <h4>$81.500</h4>
+                <figure>
+                    <img src="./imagenes/reels kastking/brutus3000/1.webp" alt="Reel Brutus 3000 vista lateral" width="300" loading="lazy">
+                    <figcaption>Vista lateral del Brutus 3000</figcaption>
+                </figure>
+                <figure>
+                    <img src="./imagenes/reels kastking/brutus3000/2.webp" alt="Reel Brutus 3000 vista superior" width="300" loading="lazy">
+                    <figcaption>Vista superior del Brutus 3000</figcaption>
+                </figure>
+                <p class="descripcion">
+                    <span class="texto-corto">
+                    El Reel KastKing Brutus 3000 es la elección perfecta para los pescadores que buscan calidad y rendimiento a un precio accesible.
+                    </span>
+                    <span class="texto-completo oculto">
+                    Con su diseño robusto, sistema de arrastre suave y mango ergonómico, este reel garantiza una experiencia de pesca superior en cualquier condición.
+                    </span>
+                </p>
+                <button class="leer-mas">Leer más</button>
+                <button class="agregar-carrito">Agregar al carrito</button>
+                </article>
+
+            <article class="producto" data-id="crixusarmor" data-nombre="Reel Kastking Crixus Armor X" data-precio="287000">
+                <h3>Reel Kastking Crixus Armor X 10bb 7.2:1 Drag 8kg</h3>
+                <h4>$287.000</h4>
+                <figure>
+                    <img src="./imagenes/reels kastking/crixus armor/1.webp" alt="Reel Kastking Crixus Armor X primer plano" width="300" loading="lazy">
+                    <figcaption>Primer plano del Crixus Armor X</figcaption>
+                </figure>
+                <figure>
+                    <img src="./imagenes/reels kastking/crixus armor/2.webp" alt="Reel Kastking Crixus Armor X desde arriba" width="300" loading="lazy">
+                    <figcaption>Vista superior del Crixus Armor X</figcaption>
+                </figure>
+                <p class="descripcion">
+                    <span class="texto-corto">
+                        Diseñado para pescadores exigentes, el Crixus Armor X combina un cuerpo ultrarresistente con suavidad y potencia de frenado para ofrecer un rendimiento confiable tanto en agua dulce como salada.                    </span>
+                    <span class="texto-completo oculto">
+                        El KastKing Crixus Armor X se destaca por su estructura sólida pero liviana, ideal para largas jornadas de pesca sin fatiga. Su relación de engranajes alta (7.2:1) permite recuperar línea rápidamente, lo que lo convierte en un excelente aliado para técnicas que requieren velocidad, como el jigging o crankbait.
+                        Gracias a su sistema de freno magnético ajustable, ofrece un control preciso del lanzamiento y reduce eficazmente el backlash. Los 10 rodamientos aseguran una operación suave y consistente, incluso bajo presión.
+                        Es una opción confiable para pescadores que buscan durabilidad, precisión y potencia de freno, todo en un solo reel.                    
+                    </span>
+                </p>
+                <button class="leer-mas">Leer más</button>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </article>
+
+            <article class="producto" data-id="sharky4000" data-nombre="Kastking Sharky III 4000" data-precio="180000">
+                <h3>Kastking Sharky Iii 4000 Baitfeeder 5.5:1 13kg Drag 11bb</h3>
+                <h4>$180.000</h4>
+                <figure>
+                    <img src="./imagenes/reels kastking/sharky/1.webp" alt="Reel Sharky Iii primer plano" width="300" loading="lazy">
+                    <figcaption>Primer plano del Sharky Iii</figcaption>
+                </figure>
+                <figure>
+                    <img src="./imagenes/reels kastking/sharky/2.webp" alt="Reel Sharky Iii desde arriba" width="300" loading="lazy">
+                    <figcaption>Vista superior del Sharky Iii</figcaption>
+                </figure>
+                <p class="descripcion">
+                    <span class="texto-corto">
+                    El Kastking Sharky III 4000 Baitfeeder es la elección perfecta para los pescadores que buscan un reel frontal de alto rendimiento. 
+                    </span>
+                    <span class="texto-completo oculto">
+                        Con una relación de transmisión de 5.5:1 y un arrastre máximo de 13 kg, este modelo está diseñado para ofrecer una experiencia de pesca fluida y eficiente. Su construcción robusta y ligera, con un peso de solo 406 g, permite un manejo cómodo durante largas jornadas en el agua.
+                        Equipado con 11 rulemanes, el Sharky III garantiza un funcionamiento suave y sin esfuerzo, lo que se traduce en un mejor control y precisión al lanzar. Este reel es ideal tanto para pescadores principiantes como para expertos que buscan mejorar su equipo. Su diseño ergonómico y funcionalidad avanzada hacen que cada captura sea más emocionante y satisfactoria.
+                        La tecnología de baitfeeder permite un ajuste fácil y rápido del arrastre, lo que facilita la pesca de especies que requieren un manejo delicado. Con el Kastking Sharky III, cada salida de pesca se convierte en una oportunidad para disfrutar de la naturaleza y perfeccionar tus habilidades. Este reel es una inversión que elevará tu experiencia de pesca a un nuevo nivel.                    
+                    </span>
+                </p>
+                <button class="leer-mas">Leer más</button>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </article>
+
+            <article class="producto" data-id="royale200" data-nombre="Kastking Royale Legend II 200" data-precio="290000">
+                <h3>Kastking Royale Legend Il 200 6.4:1 6bb 10kg Drag</h3>
+                <h4>$290.000</h4>
+                <figure>
+                    <img src="./imagenes/reels kastking/legend il/1.webp" alt="Reel Legend Il primer plano" width="300" loading="lazy">
+                    <figcaption>Primer plano del Legend Il</figcaption>
+                </figure>
+                <figure>
+                    <img src="./imagenes/reels kastking/legend il/2.webp" alt="Reeel Legend Il desde arriba" width="300" loading="lazy">
+                    <figcaption>Vista superior del Legend Il</figcaption>
+                </figure>
+                <p class="descripcion">
+                    <span class="texto-corto">
+                    El Kastking Royale Legend II 200 es un reel rotativo diseñado para los pescadores que buscan rendimiento y durabilidad.
+                    </span>
+                    <span class="texto-completo oculto">
+                        Con un cuerpo de grafito ligero, este modelo ofrece una relación de transmisión de 6.4:1, lo que permite una recuperación rápida y eficiente de la línea. Su sistema de freno magnético proporciona un control preciso, ideal para diversas técnicas de pesca.
+                        Con un arrastre máximo de 10 kg, este reel es capaz de manejar capturas significativas sin comprometer la suavidad en la acción. Equipado con 6 rulemanes, garantiza un funcionamiento fluido y sin esfuerzo, lo que mejora la experiencia de pesca. Su capacidad de línea de 0.28mm hasta 155 metros y 0.33mm hasta 130 metros lo hace versátil para diferentes condiciones de pesca.
+                        Con un peso de solo 246.5 g, el Royale Legend II 200 es fácil de manejar durante largas jornadas en el agua. Su diseño de bajo perfil se adapta cómodamente a la mano, permitiendo un uso prolongado sin fatiga. Este reel es la elección perfecta para pescadores que valoran la calidad y el rendimiento en cada lanzamiento.
+                    </span>
+                </p>
+                <button class="leer-mas">Leer más</button>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </article>
+
+            <article class="producto" data-id="carbonx4000" data-nombre="Piscifun Frontal Carbon X 4000" data-precio="167000">
+                <h3>Reel Piscifun Frontal Carbon X 4000 6.2:1 11 Bb 15kg Drag</h3>
+                <h4>$167.000</h4>
+                <figure>
+                    <img src="./imagenes/reels pascifun/frontal carbon x/1.webp" alt="Reel Frontal Carbon X primer plano" width="300" loading="lazy">
+                    <figcaption>Primer plano del Frontal Carbon X</figcaption>
+                </figure>
+                <figure>
+                    <img src="./imagenes/reels pascifun/frontal carbon x/2.webp" alt="Reel Frontal Carbon X desde arriba" width="300" loading="lazy">
+                    <figcaption>Vista superior del Frontal Carbon X</figcaption>
+                </figure>
+                <p class="descripcion">
+                    <span class="texto-corto">
+                        DEAL DORADOS Y PEJERREY DEL RIOPLA!!!!
+                        El Reel Piscifun Frontal Carbon X 4000 es la elección perfecta para los pescadores que buscan un equilibrio entre ligereza y potencia.
+                    </span>
+                    <span class="texto-completo oculto">
+                    Con un peso de solo 270 g, este reel es fácil de manejar durante largas jornadas de pesca, permitiendo una experiencia cómoda y sin esfuerzo. Su diseño frontal optimiza la precisión en cada lanzamiento, asegurando que cada captura sea un éxito.
+                    Equipado con 11 rulemanes, el Carbon X 4000 ofrece una suavidad excepcional en el arrastre, lo que se traduce en un rendimiento superior en el agua. Con una relación de transmisión de 6.2:1, este reel permite recuperar rápidamente la línea, ideal para situaciones donde la velocidad es crucial. Además, su arrastre máximo de 15 kg proporciona la fuerza necesaria para enfrentar peces de gran tamaño.
+                    La marca Piscifun es reconocida por su compromiso con la calidad y la innovación en el mundo de la pesca. Este reel no solo cumple con las expectativas, sino que las supera, convirtiéndose en una herramienta indispensable para pescadores de todos los niveles. Ya sea que estés pescando en agua dulce o salada, el Carbon X 4000 te acompañará en cada aventura, brindando confianza y rendimiento en cada lanzamiento.                    
+                    </span>
+                </p>
+                <button class="leer-mas">Leer más</button>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </article>
+
+            <article class="producto" data-id="sparkbfs" data-nombre="Piscifun Spark Bfs" data-precio="188000">
+                <h3>Reel Piscifun Spark Bfs 6.6:1 7.5kg Drag 12bb</h3>
+                <h4>$188.000</h4>
+                <figure>
+                    <img src="./imagenes/reels pascifun/spark/1.webp" alt="Reel Spark Bfs primer plano" width="300" loading="lazy">
+                    <figcaption>Primer plano del Spark Bfs</figcaption>
+                </figure>
+                <figure>
+                    <img src="./imagenes/reels pascifun/spark/2.webp" alt="Reel Spark Bfs desde arriba" width="300" loading="lazy">
+                    <figcaption>Vista superior del Spark Bfs</figcaption>
+                </figure>
+                <p class="descripcion">
+                    <span class="texto-corto">
+                    El Reel Piscifun Spark es la elección perfecta para los pescadores que buscan un rendimiento excepcional en cada lanzamiento.
+                    </span>
+                    <span class="texto-completo oculto">
+                        Con un peso de solo 172 g, este reel rotativo combina ligereza y robustez, permitiendo una experiencia de pesca cómoda y sin esfuerzo. Su relación de transmisión de 6.6:1 asegura una recuperación rápida, ideal para atrapar a los peces más esquivos.
+                        Equipado con 12 rulemanes, el Spark garantiza un funcionamiento suave y eficiente, minimizando la fricción y maximizando la durabilidad. Su arrastre máximo de 7.5 kg proporciona la fuerza necesaria para manejar capturas desafiantes, brindando confianza en cada batalla. Este reel es perfecto tanto para pescadores principiantes como para expertos que buscan mejorar su equipo.
+                        La marca Piscifun es reconocida por su compromiso con la calidad y la innovación en el mundo de la pesca. Con el modelo Spark, los pescadores pueden disfrutar de una herramienta diseñada para optimizar su rendimiento en el agua. Ya sea en ríos, lagos o en el mar, este reel se adapta a diversas condiciones, asegurando que cada jornada de pesca sea memorable.                    
+                    </span>
+                </p>
+                <button class="leer-mas">Leer más</button>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </article>
+
+            <article class="producto" data-id="alijoz300" data-nombre="Piscifun Alijoz 300" data-precio="335000">
+                <h3>Reel Alijoz 300 8.1:1 9bb 15kg Drag Manija Velocidad</h3>
+                <h4>$335.000</h4>
+                <figure>
+                    <img src="./imagenes/reels pascifun/alijoz/1.webp" alt="Reel Alijoz primer plano" width="300" loading="lazy">
+                    <figcaption>Primer plano del Alijoz</figcaption>
+                </figure>
+                <figure>
+                    <img src="./imagenes/reels pascifun/alijoz/2.webp" alt="Reel Alijoz desde arriba" width="300" loading="lazy">
+                    <figcaption>Vista superior del Alijoz</figcaption>
+                </figure>
+                <p class="descripcion">
+                    <span class="texto-corto">
+                        Caza cualquier cosa que nade en agua dulce o salada con los nuevos y potentes carretes de cebo Alijoz 300 que proporcionan una enorme potencia de arranque con una recuperación suave y sin esfuerzo.                       
+                    </span>
+                    <span class="texto-completo oculto">
+                        El Alijoz 300 baitcaster está diseñado para lanzar cebos grandes y capturar peces grandes. El tratamiento resistente al agua de alto nivel proporciona una durabilidad duradera en los entornos más duros.
+                        <b>Especificación de producto:</b>
+                        1. Tamaño: 300
+                        2. Color: negro y rojo, gris y dorado
+                        3. Rodamientos: Rodamientos de acero inoxidable blindados 8 + 1
+                        4. Relación de transmisión: 5,9: 1 (negro y rojo), 8,1: 1 (gris y dorado)
+                        5. Arrastre máximo: 15KG/33LB
+                        6. Peso del carrete: 320g
+                        7. Material de la montura: Aluminio
+                        8. Mango: mango de alimentación y mango Doble
+                        9. Uso: agua dulce y agua salada
+                        10 Mono Capacidad: 0.369mm/175m.
+                        11 Capacidad de la trenza: 0.330mm/190m
+                        <b>Características del producto:</b>
+                                1 Durable-El carrete de baitcasting Piscifun Alijoz tamaño 300 diseñado con marco de aluminio de primera calidad y placa lateral del engranaje que proporciona una durabilidad increíble para manejar los peces de agua dulce más grandes.
+                                2 Increíblemente potente y fuerte-Cuenta con 15kg de arrastre increíbles y un enorme engranaje de latón endurecido cortado Hamai para manejar a los peces fuera de su liga, el Alijoz está construido para peces grandes y grandes cebos, lo que lo convierte en un gran carrete de pesca de cebo de agua salada.
+                                3 Superior en la clase de los componentes-Cargado con componentes de alta gama, los carretes de cebo Alijoz 300 son un carrete de cebo de siguiente nivel para torneos de pesca profesionales. Alijoz cuenta con 8 rodamientos de acero inoxidable de doble blindaje y un instantáneo anti reverso emparejado con el engranaje principal de latón endurecido de corte Hamai y el engranaje de piñón para garantizar la durabilidad, poco ruido y suavidad.
+                                4 Múltiples opciones de-Los carretes de cebo Alijoz 300 vienen con opciones de proporciones de engranaje 5,9: 1 y 8,1: 1 con diferentes características recubiertas de color que lo hacen un carrete de pesca de adaptación múltiple. También puede seleccionar un mango doble ordinario o un mango de potencia fuerte de acuerdo con las preferencias personales.
+                                5 Ergonómico y innovadores-El carrete de baitcasting Piscifun Alijoz 300 viene con un botón de activación de la barra del pulgar de fácil acceso en la placa lateral del engranaje que lo ayuda a empujar hacia atrás la barra del pulgar sin girar el mango. El carrete de envoltura de línea súper resistente elimina el uso de mono como respaldo. El sistema de guía de línea de soporte de ejes dobles aumenta en gran medida la estabilidad y la durabilidad. 8 El sistema de frenado magnético efectivo evita sobrecargas y contratiempos. La almohadilla interior de la barra del pulgar envolvente le brinda una mejor comodidad.                    
+                    </span>
+                </p>
+                <button class="leer-mas">Leer más</button>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </article>
+
+            <article class="producto" data-id="baittorrent" data-nombre="Piscifun Bait Torrent 7.1:1" data-precio="118500">
+                <h3>Reel Piscifun Bait Torrent 7.1:1 8.1kg Drag 6bb</h3>
+                <h4>$118.500</h4>
+                <figure>
+                    <img src="./imagenes/reels pascifun/bait torrent/1.webp" alt="Reel Bait Torrent primer plano" width="300" loading="lazy">
+                    <figcaption>Primer plano del Bait Torrent</figcaption>
+                </figure>
+                <figure>
+                    <img src="./imagenes/reels pascifun/bait torrent/2.webp" alt="Reel Bait Torrent desde arriba" width="300" loading="lazy">
+                    <figcaption>Vista superior del Bait Torrent</figcaption>
+                </figure>
+                <p class="descripcion">
+                    <span class="texto-corto">
+                    El Reel Piscifun Bait Torrent es la elección perfecta para los pescadores que buscan rendimiento y durabilidad en cada lanzamiento.
+                    </span>
+                    <span class="texto-completo oculto">
+                        Con una relación de transmisión de 7.1:1, este reel rotativo permite una recuperación rápida y eficiente, ideal para técnicas de pesca que requieren precisión y agilidad.
+                        Con un arrastre máximo de 8.5 kg, el Torrent ofrece la potencia necesaria para enfrentar a los peces más desafiantes. Su diseño ligero, con un peso de solo 228 g, asegura que puedas pescar durante horas sin sentir fatiga, lo que lo convierte en un compañero ideal para largas jornadas en el agua.
+                        Equipado con 6 rulemanes, este reel garantiza un funcionamiento suave y sin esfuerzo, mejorando la experiencia de pesca. La marca Piscifun es reconocida por su compromiso con la calidad y la innovación, lo que se refleja en cada detalle del modelo Torrent.
+                        Ya sea que seas un pescador experimentado o estés comenzando en este apasionante deporte, el Reel Piscifun Bait Torrent te proporcionará la confianza y el rendimiento que necesitas para disfrutar de cada captura. Aumenta tu potencial en el agua y lleva tu experiencia de pesca al siguiente nivel con este excepcional reel.                    
+                    </span>
+                </p>
+                <button class="leer-mas">Leer más</button>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </article>
+
+            <article class="producto" data-id="revobeastx" data-nombre="Abu Garcia Revo Beast X 40" data-precio="620000">
+                <h3>Reel Abu Garcia Revo Beast X 40 Hs 11kg Drag 6:4:1 8 Bb</h3>
+                <h4>$620.000</h4>
+                <figure>
+                    <img src="./imagenes/reels abu/1.webp" alt="Reel Revo Beast X primer plano" width="300" loading="lazy">
+                    <figcaption>Primer plano del Revo Beast X</figcaption>
+                </figure>
+                <figure>
+                    <img src="./imagenes/reels abu/2.webp" alt="Reel Revo Beast X desde arriba" width="300" loading="lazy">
+                    <figcaption>Vista superior del Revo Beast X</figcaption>
+                </figure>
+                <p class="descripcion">
+                    <span class="texto-corto">
+                    El Reel Abu Garcia Revo Beast X 40 es la elección perfecta para los pescadores que buscan un rendimiento excepcional en cada lanzamiento.
+                    </span>
+                    <span class="texto-completo oculto">
+                        Con una relación de transmisión de 6.4:1, este reel rotativo permite una recuperación rápida y eficiente, ideal para capturar especies de gran tamaño. Su diseño robusto y ligero, con un peso de solo 386 g, garantiza comodidad durante largas jornadas de pesca.
+                        Equipado con 8 rulemanes, el Revo Beast X 40 ofrece una suavidad en el funcionamiento que mejora la experiencia de pesca. Su arrastre máximo de 11 kg proporciona la fuerza necesaria para enfrentar los desafíos más exigentes en el agua. Este reel es perfecto tanto para pescadores experimentados como para aquellos que buscan mejorar su técnica y resultados.
+                        La línea Revo de Abu Garcia es reconocida por su calidad y durabilidad, y el modelo Beast X 40 no es la excepción. Su construcción está diseñada para resistir las condiciones más adversas, asegurando un rendimiento confiable en cada uso. Con este reel, cada salida de pesca se convierte en una oportunidad para superar tus propios límites y disfrutar de la naturaleza.
+                    </span>
+                </p>
+                <button class="leer-mas">Leer más</button>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </article>
+
+        </section>
+       <section id="contacto">
+            <h2 style="text-align: center; margin-top: 3rem;">Formulario de contacto</h2>
+            <form action="https://formspree.io/f/mkgrgdoe" method="post">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" required placeholder="Ingresa tu nombre">
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" name="email" id="email" placeholder="ejemplo@gmail.com" required>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" rows="4"></textarea>
+
+                <label for="tema">Motivo de contacto:</label>
+                <select name="tema" id="tema">
+                    <option value="consulta">Consulta</option>
+                    <option value="sugerencia">Sugerencia</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="nosotros">
+            <h2 style="text-align: center; margin-top: 3rem;">Nosotros</h2>
+            <div>
+                <img src="./icons/phone-volume-solid.svg" alt="Teléfono" width="20" height="20"> 011 2035-9260
+            </div>
+            <div>
+                <img src="./icons/envelope-regular.svg" alt="Correo electrónico" width="20" height="20"> infopesca2@gmail.com
+            </div>
+            <div>
+                <img src="./icons/location-dot-solid.svg" alt="Ubicación" width="20" height="20"> CRU, Blas Parera 3083, B1636 Olivos, Provincia de Buenos Aires
+            </div>
+            <div>
+                <img src="./icons/clock-regular.svg" alt="Horario" width="20" height="20"> lunes a viernes 9 a.m - 6 p.m y sábados 9 a.m - 1 p.m
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105131.57428893974!2d-58.529642655681!3d-34.56971346527866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb0de9c96153b%3A0x3cf83225ecad4c4d!2sPesca%20Dos%20Mundo%20Outdoor!5e0!3m2!1ses-419!2sar!4v1748126592661!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#inicio"><img src="./imagenes/pesca2-logo-removebg-preview.png" alt="logo de Pesca2" width="100" height="50"></a>
+        <a href="https://www.facebook.com/Pescadosmundooutdoor/?locale=es_LA"><img src="./icons/facebook-brands.svg" alt="Facebook" width="25" height="25"></a>
+        <a href="https://api.whatsapp.com/send?phone=5491159367097"><img src="./icons/whatsapp-brands.svg" alt="WhatsApp" width="25" height="25"></a>
+        <p>&copy; 2025 Pesca2 - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

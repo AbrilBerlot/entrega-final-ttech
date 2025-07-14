@@ -1,0 +1,36 @@
+.carrito-container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: #f9f9f9;
+      color: #2c3e1f;
+      border-radius: 12px;
+    }
+    .item-carrito {
+      border-bottom: 1px solid #ccc;
+      padding: 1rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .item-carrito h4 {
+      margin: 0;
+    }
+    .total {
+      text-align: right;
+      font-weight: bold;
+      margin-top: 1rem;
+      font-size: 1.2rem;
+    }
+    .vaciar {
+      background: #a03f3f;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      margin-top: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .vaciar:hover {
+      background: #802d2d;
+    }
