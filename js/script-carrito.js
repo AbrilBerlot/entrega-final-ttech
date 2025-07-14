@@ -27,7 +27,8 @@ function mostrarCarrito() {
         <p>Cantidad: ${item.cantidad}</p>
         <p>Precio: $${item.precio}</p>
       </div>
-      <button onclick="eliminarItem('${item.id}')">Eliminar</button>
+      <button class="btn-eliminar" onclick="eliminarItem('${item.id}')">🗑️</button>
+
     `;
     lista.appendChild(div);
 
