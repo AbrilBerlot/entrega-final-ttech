@@ -51,4 +51,9 @@ function vaciarCarrito() {
   mostrarCarrito();
 }
 
+ function comprarCarrito() {
+  alert("¡Gracias por tu compra! Pronto recibirás un correo con la confirmación.");
+  localStorage.removeItem('carrito');
+  mostrarCarrito();
+}
 document.addEventListener('DOMContentLoaded', mostrarCarrito);
